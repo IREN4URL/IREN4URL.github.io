@@ -1,0 +1,78 @@
+{
+  "about": {
+    "title": "About ɪreːn",
+    "lead": "<strong>ɪreːn 🌊</strong> (Interdisciplinary Research on Ethical & Equitable NLP for under-resourced Languages) is a research collaboration dedicated to serving under-resourced languages: languages with little parallel data, few speakers available for paid annotation, writing systems that mainstream models do not cover, and communities whose data deserves careful governance.",
+    "technology": "We build and evaluate language technology for these languages, study how such systems should be measured, and create open tools that let speakers judge the output themselves. Our work so far includes translation and evaluation for Indic languages such as Manipuri (Meiteilon), written in both Bengali and Meitei Mayek script, and we welcome work on any under-resourced language.",
+    "coalition": "ɪreːn brings together researchers from Indian Central Universities, IITs, IIITs and NITs, along with international labs/institutions worldwide."
+  },
+  "aim": {
+    "title": "Aim",
+    "description": "To serve under-resourced languages with language technology that works as well for them, and for every script they are written in, as it does for high-resource languages, and to measure honestly whether it does."
+  },
+  "objectives": [
+    {
+      "id": 1,
+      "title": "Build for every language and script.",
+      "description": "Develop translation and other language technology that produces well-formed output for under-resourced languages in each of their writing systems, even when authentic data is scarce."
+    },
+    {
+      "id": 2,
+      "title": "Evaluate with the right instrument.",
+      "description": "Establish which automatic metrics and LLM judges can be trusted for which languages and scripts, rather than assuming that measures built for high-resource languages carry over."
+    },
+    {
+      "id": 3,
+      "title": "Put human judgement in speakers' hands.",
+      "description": "Provide open, self-hostable human evaluation tools that record language, script and speaker provenance, run offline, and respect community data governance."
+    },
+    {
+      "id": 4,
+      "title": "Release openly.",
+      "description": "Publish code, data and evaluation results so that other researchers and language communities can reuse and extend the work."
+    }
+  ],
+  "mission": {
+    "quote": "We build and evaluate language technology for these languages, study how such systems should be measured, and create open tools that let speakers judge the output themselves.",
+    "lede": "ɪreːn 🌊 (Interdisciplinary Research on Ethical & Equitable NLP for under-resourced Languages) is a research collaboration dedicated to serving under-resourced languages."
+  },
+  "pillars": [
+    {
+      "title": "Interdisciplinary",
+      "description": "Linguistics, machine learning, speech science and social science, working on the same problems."
+    },
+    {
+      "title": "Community-led",
+      "description": "Speakers shape the questions we ask and own the data they help create."
+    },
+    {
+      "title": "Open by default",
+      "description": "We release datasets, models and code openly wherever communities agree."
+    }
+  ],
+  "themes": [
+    {
+      "id": "low-resource-lm",
+      "title": "Low-resource language modelling",
+      "description": "Training and adapting language models when only a few thousand sentences exist, through transfer, data augmentation and careful evaluation.",
+      "tags": ["Transfer learning", "Tokenisation", "Benchmarks"]
+    },
+    {
+      "id": "speech-oral",
+      "title": "Speech and oral traditions",
+      "description": "Many languages are spoken far more than they are written. We build speech recognition and synthesis for oral-first languages and archives.",
+      "tags": ["ASR", "TTS", "Field recordings"]
+    },
+    {
+      "id": "documentation-corpus",
+      "title": "Documentation and corpus building",
+      "description": "Methods and tools for collecting, annotating and preserving language data together with speaker communities.",
+      "tags": ["Annotation tools", "Corpora", "Data ethics"]
+    },
+    {
+      "id": "multilingual-codemixed",
+      "title": "Multilingual and code-mixed language",
+      "description": "Studying how people mix languages and scripts in everyday speech and text, and building systems that handle it naturally.",
+      "tags": ["Code-switching", "Transliteration", "Sociolinguistics"]
+    }
+  ]
+}

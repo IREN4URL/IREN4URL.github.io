@@ -1,0 +1,46 @@
+[
+  {
+    "id": "gallery-chak-khum",
+    "src": "static/assets/img/gallery/get-together-1.jpg",
+    "title": "At Chak-Khum",
+    "caption": "Rudali and team celebrating milestones over traditional Manipuri cuisine at Chak-Khum restaurant.",
+    "location": "Delhi, India",
+    "date": "September 2026",
+    "alt": "Two ɪreːn members smiling and making peace signs at a table of food beneath the Chak-Khum restaurant sign",
+    "width": 1280,
+    "height": 960
+  },
+  {
+    "id": "gallery-lunch",
+    "src": "static/assets/img/gallery/get-together-2.jpg",
+    "title": "Lunch is Served",
+    "caption": "Traditional indigenous plates of seasonal greens, aromatic herbs, and shared indigenous thali recipes.",
+    "location": "Delhi, India",
+    "date": "September 2026",
+    "alt": "Plates of rice, greens and side dishes shared at the table",
+    "width": 960,
+    "height": 1280
+  },
+  {
+    "id": "gallery-whole-table",
+    "src": "static/assets/img/gallery/get-together-4.jpg",
+    "title": "The Whole Table",
+    "caption": "ɪreːn core research collaborators gathered together after a fruitful multi-day NLP evaluation workshop.",
+    "location": "Delhi, India",
+    "date": "September 2026",
+    "alt": "Five ɪreːn members gathered around a dinner table, one taking a selfie in the foreground",
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "id": "gallery-korean-dinner",
+    "src": "static/assets/img/gallery/get-together-3.jpg",
+    "title": "Korean Hotpot Gathering",
+    "caption": "An evening celebration with a boiling table hotpot following our WMT 2026 system paper submission.",
+    "location": "Delhi, India",
+    "date": "September 2026",
+    "alt": "A table of Korean dishes with a bubbling pot in the centre",
+    "width": 720,
+    "height": 1280
+  }
+]

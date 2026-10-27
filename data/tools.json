@@ -1,0 +1,17 @@
+[
+  {
+    "id": "aura",
+    "name": "Aura",
+    "tagline": "Platform for Human Evaluation of NLG",
+    "category": "Platforms",
+    "status": "Open Platform",
+    "icon": "sliders",
+    "description": "An open, self-hostable platform for human evaluation of natural language generation, built for under-resourced languages. It runs five evaluation protocols in one place (Likert/direct assessment, pairwise, ranking, error-span and post-editing), records script and speaker provenance, works fully offline, and can offer annotators an LLM assistant whose effect is logged.",
+    "tags": ["NLG Evaluation", "Human-in-the-Loop", "Offline-Ready", "Multi-Protocol"],
+    "links": [
+      { "label": "Try Aura", "url": "https://www.aura4lrl.studio", "primary": true },
+      { "label": "Watch the demo", "url": "https://youtu.be/NDtqi_Rch2I", "primary": false },
+      { "label": "Code on GitHub", "url": "https://github.com/RHuidrom96/aura", "primary": false }
+    ]
+  }
+]

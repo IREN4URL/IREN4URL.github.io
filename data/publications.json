@@ -1,0 +1,63 @@
+[
+  {
+    "id": "aura-2026",
+    "year": 2026,
+    "kind": "software",
+    "title": "Aura: A Self-Hostable Platform for Human Evaluation of NLG for Under-resourced Languages and Beyond",
+    "authors": "Rudali Huidrom, Khangembam Alex D Nelson, Nicholas Khumukcham, Hoomexsun Pangsatabam, Jesu Nazarene Roy L, Kanal Trivedi, Vikas Kumar, Pinaki Das, Kshetrimayum Boynao Singh, Tarun Bisht, Justice Konjengbam, Anand Konjengbam, and Vikram Goyal",
+    "venue": "Proceedings of AACL-IJCNLP 2026: System Demonstrations",
+    "note": "",
+    "links": [
+      {
+        "label": "Code",
+        "url": "https://github.com/RHuidrom96/aura"
+      },
+      {
+        "label": "Live platform",
+        "url": "https://www.aura4lrl.studio"
+      },
+      {
+        "label": "Demo video",
+        "url": "https://youtu.be/NDtqi_Rch2I"
+      }
+    ]
+  },
+  {
+    "id": "panini-wmt-2026",
+    "year": 2026,
+    "kind": "paper",
+    "title": "PANINI: Improving Low-Resource English ↔ Manipuri Translation in Two Scripts via rsLoRA and Three-Stream Self-Augmentation",
+    "authors": "Rudali Huidrom†, Vikas Kumar†, Hoomexsun Pangsatabam, Pinaki Das, K Kabi Khanganba, Nongmaithem Zeno, Nicholas Khumukcham, Mangalton Okram, Justice Konjengbam, Sai Varun Jamalpoor, Alex D Nelson Khangembam, Anand Konjengbam, and Vikram Goyal",
+    "venue": "Proceedings of the Eleventh Conference on Machine Translation (WMT 2026), Shared Task on Low-Resource Indic Language Translation, pages 2161–2169",
+    "note": "† Equal contribution",
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://www2.statmt.org/wmt26/pdf/2026.wmt-1.154.pdf"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/RHuidrom96/WMT-2026-Team-PANINI"
+      }
+    ]
+  },
+  {
+    "id": "which-metric-which-script-2026",
+    "year": 2026,
+    "kind": "paper",
+    "title": "Which Metric for Which Script? A Quantified Meta-Evaluation of Automatic Metrics and LLM Judges for Low-Resource Indic Machine Translation",
+    "authors": "Rudali Huidrom†, Vikas Kumar†, Hoomexsun Pangsatabam, Pinaki Das, Kshetrimayum Boynao Singh, and Anand Konjengbam",
+    "venue": "Proceedings of the Eleventh Conference on Machine Translation (WMT 2026), Research Track, pages 288–310",
+    "note": "† Equal contribution",
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://www2.statmt.org/wmt26/pdf/2026.wmt-1.17.pdf"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/RHuidrom96/which-metric-which-script"
+      }
+    ]
+  }
+]

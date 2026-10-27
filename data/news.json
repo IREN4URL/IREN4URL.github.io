@@ -1,0 +1,67 @@
+[
+  {
+    "id": "news-2026-10-wmt",
+    "date": "2026-10",
+    "dateFormatted": "October 2026",
+    "category": "Conferences",
+    "badge": "WMT 2026",
+    "title": "Two papers presented at WMT 2026 (EMNLP co-located)",
+    "summary": "ɪreːn presents two papers at the Eleventh Conference on Machine Translation (WMT 2026), Budapest, 28–29 October, co-located with EMNLP 2026.",
+    "link": {
+      "label": "Proceedings",
+      "url": "https://www2.statmt.org/wmt26/pdf/2026.wmt-1.154.pdf"
+    }
+  },
+  {
+    "id": "news-2026-10-launch",
+    "date": "2026-10",
+    "dateFormatted": "October 2026",
+    "category": "Announcements",
+    "badge": "Milestone",
+    "title": "ɪreːn website launched",
+    "summary": "The official website and research collaboration platform for ɪreːn is launched, consolidating open research, benchmarks, field tools, and datasets for under-resourced languages.",
+    "link": {
+      "label": "About",
+      "url": "#about"
+    }
+  },
+  {
+    "id": "news-2026-09-aura",
+    "date": "2026-09",
+    "dateFormatted": "September 2026",
+    "category": "Conferences",
+    "badge": "AACL 2026",
+    "title": "Aura System Demonstration accepted at AACL-IJCNLP 2026",
+    "summary": "Aura: A Self-Hostable Platform for Human Evaluation of NLG for Under-resourced Languages and Beyond accepted at the AACL-IJCNLP 2026 System Demonstration Track.",
+    "link": {
+      "label": "Try Aura",
+      "url": "https://www.aura4lrl.studio"
+    }
+  },
+  {
+    "id": "news-2026-09-metric",
+    "date": "2026-09",
+    "dateFormatted": "September 2026",
+    "category": "Conferences",
+    "badge": "WMT 2026",
+    "title": "Which Metric for Which Script? accepted at WMT 2026 Research Track",
+    "summary": "Which Metric for Which Script? A Quantified Meta-Evaluation of Automatic Metrics and LLM Judges for Low-Resource Indic Machine Translation accepted at the WMT 2026 Research Track.",
+    "link": {
+      "label": "Paper PDF",
+      "url": "https://www2.statmt.org/wmt26/pdf/2026.wmt-1.17.pdf"
+    }
+  },
+  {
+    "id": "news-2026-06-panini",
+    "date": "2026-06",
+    "dateFormatted": "June 2026",
+    "category": "Conferences",
+    "badge": "WMT 2026",
+    "title": "Team PANINI system paper accepted at WMT 2026 Shared Task",
+    "summary": "Team PANINI's system paper accepted at the WMT 2026 Shared Task on Low-Resource Indic Language Translation.",
+    "link": {
+      "label": "GitHub Repo",
+      "url": "https://github.com/RHuidrom96/WMT-2026-Team-PANINI"
+    }
+  }
+]

@@ -1,0 +1,23 @@
+{
+  "brand": "IREN",
+  "symbol": "ɪreːn 🌊",
+  "fullform": "Interdisciplinary Research for Emerging Natural-languages",
+  "metaDescription": "IREN is an interdisciplinary research collaboration working on computational and linguistic research for emerging and under-resourced natural languages.",
+  "contact": {
+    "email": "huidromrudali@gmail.com",
+    "lead": "Rudali Huidrom",
+    "leadRole": "ɪreːn Lead and Coordinator",
+    "github": "https://github.com/RHuidrom96",
+    "address": "CNRS, LIG, GETALP / Collaborating Institutions Across India & Worldwide"
+  },
+  "nav": [
+    { "label": "About", "href": "#about" },
+    { "label": "Objectives", "href": "#objectives" },
+    { "label": "Collaborators", "href": "#collaborators" },
+    { "label": "Publications", "href": "#publications" },
+    { "label": "Tools", "href": "#tools" },
+    { "label": "News", "href": "#news" },
+    { "label": "Gallery", "href": "#gallery" },
+    { "label": "Contact us", "href": "#contact" }
+  ]
+}

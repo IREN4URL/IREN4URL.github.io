@@ -1,112 +1,430 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover" />
-    <meta name="description" content="ɪreːn: Interdisciplinary Research on Ethical & Equitable NLP for Under-resourced Languages, a research collaboration" />
-    <meta name="author" content="ɪreːn 🌊 collaboration" />
-    <title id="title">ɪreːn 🌊 | Interdisciplinary Research for Emerging Natural-languages</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>ɪreːn — Interdisciplinary Research for Emerging Natural-languages</title>
+  <meta name="description" content="ɪreːn is an interdisciplinary research collaboration working on computational and linguistic research for emerging and under-resourced natural languages.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="static/assets/favicon.ico">
 
-    <!-- Icon -->
-    <link rel="icon" type="image/x-icon" href="static/assets/favicon.ico" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Noto+Sans+Bengali:wght@300;400&family=Noto+Sans+Devanagari:wght@300;400&family=Noto+Sans+Ethiopic:wght@300;400&family=Noto+Sans+Gurmukhi:wght@300;400&family=Noto+Sans+Kannada:wght@300;400&family=Noto+Sans+Malayalam:wght@300;400&family=Noto+Sans+Meetei+Mayek:wght@300;400&family=Noto+Sans+Tamil:wght@300;400&family=Noto+Sans+Telugu:wght@300;400&display=swap" rel="stylesheet">
 
-    <!-- Bootstrap icons -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
-
-    <!-- Google fonts: Jost & Multilingual Noto Sans scripts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Noto+Sans+Bengali:wght@300;400&family=Noto+Sans+Devanagari:wght@300;400&family=Noto+Sans+Ethiopic:wght@300;400&family=Noto+Sans+Gurmukhi:wght@300;400&family=Noto+Sans+Kannada:wght@300;400&family=Noto+Sans+Malayalam:wght@300;400&family=Noto+Sans+Meetei+Mayek:wght@300;400&family=Noto+Sans+Tamil:wght@300;400&family=Noto+Sans+Telugu:wght@300;400&display=swap" rel="stylesheet" />
-
-    <!-- Core theme CSS -->
-    <link type="text/css" href="static/css/main.css" rel="stylesheet" />
-
-    <!-- Markdown Parser -->
-    <script type="text/javascript" src="static/js/marked.min.js"></script>
-
-    <!-- YAML Parser -->
-    <script type="text/javascript" src="static/js/js-yaml.min.js"></script>
-
-    <!-- Mathematics (MathJax) -->
-    <script>
-        MathJax = {
-            tex: {
-                packages: {},
-                inlineMath: [['$', '$'], ['\\(', '\\)']],
-                displayMath: [['$$', '$$'], ['\\[', '\\]']],
-                processEscapes: false,
-                processEnvironments: true,
-                processRefs: true
-            }
-        };
-    </script>
-    <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
-
-    <!-- Core Script -->
-    <script type="text/javascript" src="static/js/scripts.js"></script>
+  <!-- Main Theme Stylesheet -->
+  <link rel="stylesheet" href="static/css/theme.css?v=3.7">
 </head>
+<body>
 
-<body id="page-top" class="site-loading">
+  <!-- Site Navigation Header -->
+  <header class="site">
+    <div class="wrap">
+      <a class="brand" href="#top" aria-label="IREN home">
+        <svg class="brand-mark" viewBox="-60 -46 120 92" aria-hidden="true"><path data-ring="0"/></svg>
+        <span class="brand-name">ɪreːn 🌊</span>
+      </a>
+      <!-- Desktop Navigation -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#objectives">Objectives</a></li>
+          <li><a href="#collaborators">Collaborators</a></li>
+          <li><a href="#publications">Publications</a></li>
+          <li><a href="#tools">Tools</a></li>
+          <li><a href="#news">News</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact us</a></li>
+        </ul>
+      </nav>
 
-    <!-- Skeleton Loader -->
-    <div id="page-skeleton" class="page-skeleton" aria-hidden="true">
-        <div class="wrap">
-            <div class="skeleton-block skeleton-title"></div>
-            <div class="skeleton-block skeleton-line"></div>
-            <div class="skeleton-block skeleton-line"></div>
-            <div class="skeleton-block skeleton-line skeleton-line-short"></div>
-        </div>
+      <!-- Mobile Navigation Hamburger Button -->
+      <button class="mobile-nav-toggle" id="mobile-nav-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-nav-menu">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
     </div>
 
-    <!-- Header & Navigation -->
-    <header class="site">
-        <div class="wrap">
-            <a class="brand" href="#page-top" aria-label="IREN home">
-                <svg class="brand-mark" viewBox="-60 -46 120 92" aria-hidden="true"><path data-ring="0"/></svg>
-                <span id="page-top-title">ɪreːn 🌊</span>
-            </a>
-            <nav aria-label="Main Navigation">
-                <ul id="navbar-items"></ul>
-            </nav>
+    <!-- Mobile Navigation Glassmorphic Pop-up Drawer -->
+    <div class="mobile-nav-menu" id="mobile-nav-menu" aria-hidden="true">
+      <div class="mobile-nav-backdrop" id="mobile-nav-backdrop"></div>
+      <div class="mobile-nav-panel">
+        <div class="mobile-nav-top">
+          <span class="brand-name">ɪreːn 🌊</span>
+          <button class="mobile-nav-close" id="mobile-nav-close" type="button" aria-label="Close navigation menu">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
         </div>
-    </header>
+        <ul class="mobile-nav-list">
+          <li><a href="#about" class="mobile-nav-link"><span>About</span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg></a></li>
+          <li><a href="#objectives" class="mobile-nav-link"><span>Aim &amp; Objectives</span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg></a></li>
+          <li><a href="#collaborators" class="mobile-nav-link"><span>Collaborators</span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg></a></li>
+          <li><a href="#publications" class="mobile-nav-link"><span>Publications</span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg></a></li>
+          <li><a href="#tools" class="mobile-nav-link"><span>Tools</span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg></a></li>
+          <li><a href="#news" class="mobile-nav-link"><span>News</span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg></a></li>
+          <li><a href="#gallery" class="mobile-nav-link"><span>Gallery</span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg></a></li>
+          <li><a href="#contact" class="mobile-nav-link mobile-nav-cta"><span>Contact us</span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg></a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
 
-    <!-- Hero Section -->
-    <section class="hero" id="top-section">
-        <div class="wrap hero-inner">
-            <div class="lockup">
-                <svg class="hero-rings" id="rings" viewBox="-1400 -600 2800 1200" aria-hidden="true"></svg>
-                <div class="lockup-text">
-                    <h1 aria-label="ɪreːn"><span class="name latin" id="name" aria-hidden="true"></span></h1>
-                    <p class="fullform" id="top-section-tagline">Interdisciplinary Research for Emerging <span style="white-space:nowrap">Natural-languages</span></p>
-                </div>
-            </div>
-            <p class="lede" id="hero-lede">We bring linguists, computer scientists and language communities together to build data, tools and models for languages that today’s technology leaves behind.</p>
-            <div class="cta-row">
-                <a class="btn btn-solid" href="#objectives">Aim & Objectives</a>
-                <a class="btn btn-ghost" href="#publications">See publications</a>
-            </div>
+  <main id="top">
+    <!-- Hero Section with Organic SVG Rings and Multilingual Title Flip -->
+    <section class="hero" id="hero-section">
+      <!-- Ambient Ripple Rings as full hero background canvas behind all content -->
+      <svg class="hero-rings" id="rings" viewBox="-1400 -600 2800 1200" aria-hidden="true"></svg>
+
+      <div class="wrap hero-inner">
+        <div class="lockup" id="hero-lockup">
+          <div class="lockup-text">
+            <h1 aria-label="ɪreːn"><span class="name latin" id="name" aria-hidden="true"></span></h1>
+            <p class="fullform" id="top-section-tagline">Interdisciplinary Research for Emerging <span style="white-space:nowrap">Natural-languages</span></p>
+          </div>
         </div>
+        <p class="lede" id="hero-lede">We bring linguists, computer scientists and language communities together to build data, tools and models for languages that today’s technology leaves behind.</p>
+        <div class="cta-row">
+          <a class="btn btn-solid" href="#objectives">Aim &amp; Objectives</a>
+          <a class="btn btn-ghost" href="#publications">See publications</a>
+        </div>
+      </div>
     </section>
 
-    <!-- Markdown-Generated Sections -->
-    <main id="sections"></main>
-
-    <!-- Footer -->
-    <footer class="site-footer">
-        <div class="wrap">
-            <span id="copyright-text">&copy; 2026 ɪreːn 🌊 collaboration</span>
-            <div class="footer-links">
-                <a id="github-link" href="https://github.com/your-org/your-repo">GitHub</a>
-                <span class="mx-1">&middot;</span>
-                <a id="license-link" href="https://github.com/your-org/your-repo/blob/main/LICENSE">License</a>
-                <span class="mx-1">&middot;</span>
-                <a href="#page-top">Back to top &uarr;</a>
+    <!-- About Section -->
+    <section class="block" id="about">
+      <div class="wrap">
+        <div class="about-glass-slab">
+          <div class="section-head">
+            <h2>About <span class="iren-name">ɪreːn</span></h2>
+          </div>
+          <div class="about-editorial-wrap">
+            <p class="about-lead-statement" id="about-lead">
+              <strong><span class="iren-name">ɪreːn</span> 🌊</strong> (Interdisciplinary Research on Ethical &amp; Equitable NLP for under-resourced Languages) is a research collaboration dedicated to serving under-resourced languages: languages with little parallel data, few speakers available for paid annotation, writing systems that mainstream models do not cover, and communities whose data deserves careful governance.
+            </p>
+            <p class="about-narrative-text" id="about-tech">
+              We build and evaluate language technology for these languages, study how such systems should be measured, and create open tools that let speakers judge the output themselves. Our work so far includes translation and evaluation for Indic languages such as Manipuri (Meiteilon), written in both Bengali and Meitei Mayek script, and we welcome work on any under-resourced language.
+            </p>
+            <div class="about-institution-card" id="about-coalition">
+              <p class="coalition-text">
+                <strong><span class="iren-name">ɪreːn</span></strong> brings together researchers from Indian Central Universities, IITs, IIITs and NITs, along with international labs/institutions worldwide.
+              </p>
             </div>
+          </div>
         </div>
-    </footer>
+      </div>
+    </section>
 
+    <!-- Aim and Objectives Section -->
+    <section class="block" id="objectives">
+      <span id="research" aria-hidden="true" style="position:relative; top:-80px;"></span>
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Aim and objectives</h2>
+        </div>
+
+        <div class="aim-objectives-layout">
+          <!-- Aim Block -->
+          <div class="aim-glass-slab" id="aim-block">
+            <div class="aim-pretitle">Aim</div>
+            <p class="aim-statement-body" id="aim-text">
+              To serve under-resourced languages with language technology that works as well for them, and for every script they are written in, as it does for high-resource languages, and to measure honestly whether it does.
+            </p>
+          </div>
+
+          <!-- Objectives Block -->
+          <div class="objectives-layout-block">
+            <h3 class="objectives-title">Objectives</h3>
+            <ol class="objectives-editorial-grid" id="objectives-container">
+              <li class="objective-card-item">
+                <div class="obj-num" aria-hidden="true">01</div>
+                <div class="obj-body">
+                  <h4 class="obj-title">Build for every language and script.</h4>
+                  <p class="obj-text">Develop translation and other language technology that produces well-formed output for under-resourced languages in each of their writing systems, even when authentic data is scarce.</p>
+                </div>
+              </li>
+              <li class="objective-card-item">
+                <div class="obj-num" aria-hidden="true">02</div>
+                <div class="obj-body">
+                  <h4 class="obj-title">Evaluate with the right instrument.</h4>
+                  <p class="obj-text">Establish which automatic metrics and LLM judges can be trusted for which languages and scripts, rather than assuming that measures built for high-resource languages carry over.</p>
+                </div>
+              </li>
+              <li class="objective-card-item">
+                <div class="obj-num" aria-hidden="true">03</div>
+                <div class="obj-body">
+                  <h4 class="obj-title">Put human judgement in speakers' hands.</h4>
+                  <p class="obj-text">Provide open, self-hostable human evaluation tools that record language, script and speaker provenance, run offline, and respect community data governance.</p>
+                </div>
+              </li>
+              <li class="objective-card-item">
+                <div class="obj-num" aria-hidden="true">04</div>
+                <div class="obj-body">
+                  <h4 class="obj-title">Release openly.</h4>
+                  <p class="obj-text">Publish code, data and evaluation results so that other researchers and language communities can reuse and extend the work.</p>
+                </div>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Collaborators Section with Sliding Rows -->
+    <section class="block" id="people">
+      <span id="collaborators" aria-hidden="true" style="position:relative; top:-80px;"></span>
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Collaborators</h2>
+          <p>A collaborative team of researchers, faculty, scholars, and students spanning linguistics, computer science, and data engineering.</p>
+        </div>
+        <div id="people-container">
+          <!-- Populated dynamically from data/people.json with smooth carousel sliders for large groups -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Publications Section with Category Filter Tabs & Pagination -->
+    <section class="block" id="publications">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Publications</h2>
+          <p>Peer-reviewed papers, shared-task systems, evaluation benchmarks, and open research platforms.</p>
+        </div>
+        <div class="pub-filter-bar" id="pub-filter-bar" role="group" aria-label="Filter publications">
+          <!-- Populated dynamically -->
+        </div>
+        <div class="pubs-container" id="pubs-container">
+          <!-- Populated dynamically from data/publications.json -->
+        </div>
+        <div class="pub-pagination-wrapper" id="pub-pagination-wrapper">
+          <!-- Populated dynamically with pagination controls -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Tools & Platforms Section -->
+    <section class="block" id="tools">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Tools</h2>
+          <p>Open platforms and software built for community linguists, evaluators, and NLP researchers.</p>
+        </div>
+        <div class="tools-filter-bar" id="tools-filter-bar" role="group" aria-label="Filter tools">
+          <!-- Populated dynamically -->
+        </div>
+        <div class="tools-grid" id="tools-container">
+          <!-- Populated dynamically from data/tools.json -->
+        </div>
+        <div class="tools-pagination-wrapper" id="tools-pagination-wrapper">
+          <!-- Populated dynamically with pagination controls -->
+        </div>
+      </div>
+    </section>
+
+    <!-- News & Events Section -->
+    <section class="block" id="news">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>News</h2>
+          <p>Recent developments, conference presentations, and announcements from our collaboration.</p>
+        </div>
+        <div class="news-list" id="news-container">
+          <!-- Populated dynamically from data/news.json (1-column feed, max 5 rows) -->
+        </div>
+        <div class="news-pagination-wrapper" id="news-pagination-wrapper">
+          <!-- Populated dynamically with pagination controls -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section with Carousel Slider -->
+    <section class="block" id="gallery">
+      <div class="wrap">
+        <div class="gallery-header-row">
+          <div class="section-head" style="margin-bottom: 0;">
+            <h2>Gallery</h2>
+            <p>Moments from ɪreːn get-togethers, workshops, and team gatherings.</p>
+          </div>
+          <div class="apple-nav-arrows" id="gallery-nav-arrows">
+            <button class="apple-arrow-btn" id="gallery-prev" aria-label="Previous image">‹</button>
+            <button class="apple-arrow-btn" id="gallery-next" aria-label="Next image">›</button>
+          </div>
+        </div>
+        <div class="gallery-wrapper">
+          <div class="gallery-track-2row" id="gallery-track">
+            <!-- Populated dynamically from data/gallery.json (2-row horizontal track) -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Apple Vision-OS Gallery Lightbox Modal -->
+    <div class="gallery-lightbox" id="gallery-lightbox" role="dialog" aria-modal="true" aria-label="Photo Preview" hidden>
+      <div class="lightbox-backdrop" id="lightbox-backdrop"></div>
+      <div class="lightbox-dialog" role="document">
+        <button class="lightbox-close-btn" id="lightbox-close" aria-label="Close preview">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+        <button class="lightbox-nav-btn prev" id="lightbox-prev" aria-label="Previous photo">‹</button>
+        <button class="lightbox-nav-btn next" id="lightbox-next" aria-label="Next photo">›</button>
+        <div class="lightbox-media-container">
+          <img class="lightbox-img-bg" id="lightbox-img-bg" src="" alt="" aria-hidden="true">
+          <div class="lightbox-media-overlay" aria-hidden="true"></div>
+          <img class="lightbox-img" id="lightbox-img" src="" alt="">
+        </div>
+        <div class="lightbox-info-bar">
+          <div class="lightbox-text">
+            <h3 class="lightbox-title" id="lightbox-title"></h3>
+            <p class="lightbox-caption" id="lightbox-caption"></p>
+          </div>
+          <div class="lightbox-meta">
+            <span class="lightbox-location-badge" id="lightbox-location"></span>
+            <span class="lightbox-date-badge" id="lightbox-date"></span>
+            <span class="lightbox-counter-badge" id="lightbox-counter"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Us Section -->
+    <section class="block" id="contact">
+      <div class="wrap">
+        <div class="contact-slab">
+          <!-- Left Column: Editorial & Context from design_one -->
+          <div class="contact-context">
+            <div class="section-head">
+              <h2>Contact us</h2>
+            </div>
+            <p class="contact-lead">
+              Questions about our work, interest in collaborating, or a language you would like to see served? Reach out to the <span class="iren-name">ɪreːn</span> research team and coordinator using the inquiry form.
+            </p>
+
+            <div class="contact-pathways">
+              <div class="pathway-card">
+                <div class="pathway-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                </div>
+                <div class="pathway-info">
+                  <h4>Research &amp; Joint Projects</h4>
+                  <p>Joint evaluations, shared benchmarks, model development, and academic visits.</p>
+                </div>
+              </div>
+
+              <div class="pathway-card">
+                <div class="pathway-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                </div>
+                <div class="pathway-info">
+                  <h4>Language Communities</h4>
+                  <p>Archival speech collection, orthographic tool deployment, and community-led NLP.</p>
+                </div>
+              </div>
+
+              <div class="pathway-card">
+                <div class="pathway-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+                </div>
+                <div class="pathway-info">
+                  <h4>Students &amp; Fellows</h4>
+                  <p>Research internships, thesis topics in low-resource speech, and open mentoring.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Meta details (Affiliation & GitHub, email securely protected) -->
+            <div class="contact-meta-card">
+              <div class="contact-meta-item">
+                <span class="meta-label">Lead &amp; Coordinator</span>
+                <span class="meta-value">Rudali Huidrom</span>
+              </div>
+              <div class="contact-meta-item">
+                <span class="meta-label">Affiliation</span>
+                <span class="meta-value" id="contact-address">CNRS, LIG, GETALP / Collaborating Labs</span>
+              </div>
+              <div class="contact-meta-item">
+                <span class="meta-label">Code &amp; Repositories</span>
+                <a class="meta-link" id="contact-github" href="https://github.com/RHuidrom96" target="_blank" rel="noopener noreferrer">
+                  <span>GitHub / RHuidrom96</span>
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Interactive Apple Glassmorphic Contact Form (FormSubmit) -->
+          <div class="contact-form-card">
+            <div class="form-header">
+              <h3>Connect with <span class="iren-name">ɪreːn</span></h3>
+              <p>Send an inquiry directly to the research team. No login or account required.</p>
+            </div>
+
+            <form class="contact-form" id="contact-form" novalidate>
+              <!-- Anti-Spam Honeypot Field (hidden from genuine users) -->
+              <input type="text" name="_honey" id="contact-honey" class="contact-honey" tabindex="-1" autocomplete="off" aria-hidden="true" style="display:none !important;" />
+
+              <div class="form-grid">
+                <div class="form-field">
+                  <label for="contact-name">Your Name <span class="req">*</span></label>
+                  <input type="text" id="contact-name" name="name" required placeholder="e.g. Maria Chen" autocomplete="name" />
+                </div>
+
+                <div class="form-field">
+                  <label for="contact-email">Email Address <span class="req">*</span></label>
+                  <input type="email" id="contact-email" name="email" required placeholder="you@university.edu" autocomplete="email" />
+                </div>
+              </div>
+
+              <div class="form-field">
+                <label for="contact-category">Inquiry Topic</label>
+                <div class="select-wrap">
+                  <select id="contact-category" name="category">
+                    <option value="Research Collaboration">Research Collaboration &amp; Joint Projects</option>
+                    <option value="Language Community">Language Community &amp; Fieldwork</option>
+                    <option value="Tools & Datasets">Datasets, Benchmarks &amp; Tools</option>
+                    <option value="Student Opportunity">Student / Research Fellowship</option>
+                    <option value="General Inquiry">General Question</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-field">
+                <label for="contact-message">Message <span class="req">*</span></label>
+                <textarea id="contact-message" name="message" rows="4" required placeholder="Tell us about your background, language focus, or question..."></textarea>
+              </div>
+
+              <div class="form-footer">
+                <button type="submit" class="contact-submit-btn" id="contact-submit-btn">
+                  <span>Send message</span>
+                  <svg class="send-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <line x1="22" y1="2" x2="11" y2="13"/>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+                  </svg>
+                </button>
+              </div>
+
+              <div class="contact-status" id="contact-status" role="status" aria-live="polite"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer>
+    <div class="wrap">
+      <span>© 2026 ɪreːn 🌊 — Interdisciplinary Research for Emerging Natural-languages</span>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <!-- Application JS -->
+  <script src="static/js/app.js?v=2.9"></script>
 </body>
-
 </html>
