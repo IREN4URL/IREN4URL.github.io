@@ -42,15 +42,18 @@
 
     var names = [
       ["ɪreːn", "en"],
-      ["आइरेन", "hi"],
-      ["ஐரென்", "ta"],
-      ["ഐറെൻ", "ml"],
-      ["আইরেন", "bn"],
-      ["ಐರೆನ್", "kn"],
-      ["ఐరెన్", "te"],
-      ["ਆਈਰੇਨ", "pa"],
+      ["इरेन", "hi"],
+      ["இரேன்", "ta"],
+      ["ഇരേൻ", "ml"],
+      ["ইরেন", "bn"],
+      ["ಇರೇನ್", "kn"],
+      ["ఇరేన్", "te"],
+      ["ਇਰੇਨ", "pa"],
       ["ꯏꯔꯦꯟ", "mni"],
-      ["አይረን", "am"]
+      ["ইৰেন", "as"],
+      ["ଇରେନ୍", "or"],
+      ["آئرین", "ur"],
+      ["ઇરેન", "gu"]
     ];
 
     var el = document.getElementById("name");
@@ -58,7 +61,7 @@
 
     var i = 0;
     var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    var viramas = "\u094D\u09CD\u0A4D\u0BCD\u0C4D\u0CCD\u0D4D";
+    var viramas = "\u094D\u09CD\u0A4D\u0BCD\u0C4D\u0CCD\u0D4D\u0ACD\u0B4D";
 
     function letters(str) {
       var parts = window.Intl && Intl.Segmenter

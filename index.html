@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>ɪreːn — Interdisciplinary Research for Emerging Natural-languages</title>
-  <meta name="description" content="ɪreːn is an interdisciplinary research collaboration working on computational and linguistic research for emerging and under-resourced natural languages.">
+  <title>ɪreːn — Interdisciplinary Research on Ethical &amp; Equitable NLP for under-resourced Languages</title>
+  <meta name="description" content="ɪreːn is an interdisciplinary research collaboration working on ethical and equitable language technology for under-resourced languages.">
   
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="static/assets/favicon.ico">
@@ -12,7 +12,7 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Noto+Sans+Bengali:wght@300;400&family=Noto+Sans+Devanagari:wght@300;400&family=Noto+Sans+Ethiopic:wght@300;400&family=Noto+Sans+Gurmukhi:wght@300;400&family=Noto+Sans+Kannada:wght@300;400&family=Noto+Sans+Malayalam:wght@300;400&family=Noto+Sans+Meetei+Mayek:wght@300;400&family=Noto+Sans+Tamil:wght@300;400&family=Noto+Sans+Telugu:wght@300;400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Noto+Sans+Arabic:wght@300;400&family=Noto+Sans+Bengali:wght@300;400&family=Noto+Sans+Devanagari:wght@300;400&family=Noto+Sans+Ethiopic:wght@300;400&family=Noto+Sans+Gujarati:wght@300;400&family=Noto+Sans+Gurmukhi:wght@300;400&family=Noto+Sans+Kannada:wght@300;400&family=Noto+Sans+Malayalam:wght@300;400&family=Noto+Sans+Meetei+Mayek:wght@300;400&family=Noto+Sans+Oriya:wght@300;400&family=Noto+Sans+Tamil:wght@300;400&family=Noto+Sans+Telugu:wght@300;400&display=swap" rel="stylesheet">
 
   <!-- Main Theme Stylesheet -->
   <link rel="stylesheet" href="static/css/theme.css?v=3.7">
@@ -22,9 +22,12 @@
   <!-- Site Navigation Header -->
   <header class="site">
     <div class="wrap">
-      <a class="brand" href="#top" aria-label="IREN home">
+      <a class="brand" href="#top" aria-label="IREN home" title="Interdisciplinary Research on Ethical &amp; Equitable NLP for under-resourced languages">
         <svg class="brand-mark" viewBox="-60 -46 120 92" aria-hidden="true"><path data-ring="0"/></svg>
-        <span class="brand-name">ɪreːn 🌊</span>
+        <div class="brand-text">
+          <span class="brand-name">ɪreːn</span>
+          <span class="brand-sub">Interdisciplinary Research on Ethical &amp; Equitable NLP for under-resourced languages</span>
+        </div>
       </a>
       <!-- Desktop Navigation -->
       <nav class="desktop-nav" aria-label="Main Navigation">
@@ -53,7 +56,10 @@
       <div class="mobile-nav-backdrop" id="mobile-nav-backdrop"></div>
       <div class="mobile-nav-panel">
         <div class="mobile-nav-top">
-          <span class="brand-name">ɪreːn 🌊</span>
+          <div class="mobile-nav-brand-wrap">
+            <span class="brand-name">ɪreːn</span>
+            <span class="mobile-nav-fullform">Interdisciplinary Research on Ethical &amp; Equitable NLP for under-resourced languages</span>
+          </div>
           <button class="mobile-nav-close" id="mobile-nav-close" type="button" aria-label="Close navigation menu">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
               <line x1="18" y1="6" x2="6" y2="18"></line>
@@ -85,7 +91,7 @@
         <div class="lockup" id="hero-lockup">
           <div class="lockup-text">
             <h1 aria-label="ɪreːn"><span class="name latin" id="name" aria-hidden="true"></span></h1>
-            <p class="fullform" id="top-section-tagline">Interdisciplinary Research for Emerging <span style="white-space:nowrap">Natural-languages</span></p>
+            <p class="fullform" id="top-section-tagline">Interdisciplinary Research on Ethical &amp; Equitable NLP for <span style="white-space:nowrap">under-resourced Languages</span></p>
           </div>
         </div>
         <p class="lede" id="hero-lede">We bring linguists, computer scientists and language communities together to build data, tools and models for languages that today’s technology leaves behind.</p>
@@ -105,7 +111,7 @@
           </div>
           <div class="about-editorial-wrap">
             <p class="about-lead-statement" id="about-lead">
-              <strong><span class="iren-name">ɪreːn</span> 🌊</strong> (Interdisciplinary Research on Ethical &amp; Equitable NLP for under-resourced Languages) is a research collaboration dedicated to serving under-resourced languages: languages with little parallel data, few speakers available for paid annotation, writing systems that mainstream models do not cover, and communities whose data deserves careful governance.
+              <strong><span class="iren-name">ɪreːn</span></strong> (Interdisciplinary Research on Ethical &amp; Equitable NLP for under-resourced Languages) is a research collaboration dedicated to serving under-resourced languages: languages with little parallel data, few speakers available for paid annotation, writing systems that mainstream models do not cover, and communities whose data deserves careful governance.
             </p>
             <p class="about-narrative-text" id="about-tech">
               We build and evaluate language technology for these languages, study how such systems should be measured, and create open tools that let speakers judge the output themselves. Our work so far includes translation and evaluation for Indic languages such as Manipuri (Meiteilon), written in both Bengali and Meitei Mayek script, and we welcome work on any under-resourced language.
@@ -419,7 +425,7 @@
   <!-- Site Footer -->
   <footer>
     <div class="wrap">
-      <span>© 2026 ɪreːn 🌊 — Interdisciplinary Research for Emerging Natural-languages</span>
+      <span>© 2026 ɪreːn — Interdisciplinary Research on Ethical &amp; Equitable NLP for under-resourced Languages</span>
       <a href="#top">Back to top ↑</a>
     </div>
   </footer>

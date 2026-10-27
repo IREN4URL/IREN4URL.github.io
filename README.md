@@ -1,4 +1,4 @@
-# ɪreːn 🌊 (Design Two)
+# ɪreːn (Design Two)
 **Interdisciplinary Research on Ethical & Equitable NLP for under-resourced Languages**
 
 Modernized, client-side, zero-build research platform for the **ɪreːn** collaboration, built with an Apple VisionOS-inspired translucent glassmorphic design system, dynamic multi-script canvas typography, responsive interactive filters, accessible lightbox gallery, and modular JSON-driven data architecture.
@@ -54,9 +54,9 @@ Controls global website metadata, the hero banner lead, contact information, and
 ```json
 {
   "brand": "IREN",
-  "symbol": "ɪreːn 🌊",
-  "fullform": "Interdisciplinary Research for Emerging Natural-languages",
-  "metaDescription": "IREN is an interdisciplinary research collaboration...",
+  "symbol": "ɪreːn",
+  "fullform": "Interdisciplinary Research on Ethical & Equitable NLP for under-resourced languages",
+  "metaDescription": "ɪreːn is an interdisciplinary research collaboration...",
   "contact": {
     "email": "huidromrudali@gmail.com",
     "lead": "Rudali Huidrom",

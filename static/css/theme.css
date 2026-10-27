@@ -26,7 +26,7 @@
   --tint: #ECECE7;
   --sans: "Jost", "Futura", "Century Gothic", system-ui, -apple-system, "Segoe UI", sans-serif;
   --serif: "Jost", "Futura", "Century Gothic", system-ui, -apple-system, "Segoe UI", sans-serif;
-  --script: "Noto Sans Devanagari", "Noto Sans Tamil", "Noto Sans Kannada", "Noto Sans Bengali", "Noto Sans Ethiopic", "Noto Sans Malayalam", "Noto Sans Telugu", "Noto Sans Gurmukhi", "Noto Sans Meetei Mayek", "Jost", system-ui, sans-serif;
+  --script: "Noto Sans Devanagari", "Noto Sans Tamil", "Noto Sans Kannada", "Noto Sans Bengali", "Noto Sans Ethiopic", "Noto Sans Malayalam", "Noto Sans Telugu", "Noto Sans Gurmukhi", "Noto Sans Meetei Mayek", "Noto Sans Oriya", "Noto Sans Gujarati", "Noto Sans Arabic", "Jost", system-ui, sans-serif;
   box-sizing: border-box;
   padding-top: env(safe-area-inset-top, 0px);
   padding-bottom: env(safe-area-inset-bottom, 0px);
@@ -123,20 +123,72 @@ header.site .wrap {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 24px;
-  height: 64px;
+  gap: 20px;
+  min-height: 64px;
+  height: auto;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  transition: min-height 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+              padding 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+header.site.scrolled .wrap {
+  min-height: 56px;
+  padding-top: 4px;
+  padding-bottom: 4px;
 }
 
 .brand {
   font-family: var(--sans);
-  font-weight: 500;
-  font-size: 1.25rem;
-  letter-spacing: .24em;
   color: var(--ink);
   text-decoration: none;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
+  flex-shrink: 1;
+  min-width: 0;
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5px;
+  min-width: 0;
+}
+
+.brand-name {
+  font-family: var(--sans);
+  font-weight: 500;
+  font-size: 1.20rem;
+  letter-spacing: .22em;
+  color: var(--ink);
+  line-height: 1.1;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.brand-sub {
+  font-family: var(--sans);
+  font-size: 0.67rem;
+  letter-spacing: 0.02em;
+  font-weight: 400;
+  color: var(--ink-soft);
+  line-height: 1.25;
+  white-space: normal;
+  max-width: 440px;
+  opacity: 0.88;
+  max-height: 38px;
+  transition: opacity 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+              max-height 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+              margin 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  overflow: hidden;
+}
+
+header.site.scrolled .brand-sub {
+  opacity: 0;
+  max-height: 0;
+  margin: 0;
+  pointer-events: none;
 }
 
 .brand-mark {
@@ -489,14 +541,45 @@ nav a:hover {
     display: none !important;
   }
 
-  /* Single-line Clean Mobile Header */
+  /* Responsive Mobile Header */
   header.site .wrap {
-    height: 60px !important;
-    padding-top: 0 !important;
-    padding-bottom: 0 !important;
+    height: auto !important;
+    min-height: 58px !important;
+    padding-top: 6px !important;
+    padding-bottom: 6px !important;
     flex-direction: row !important;
     align-items: center !important;
     justify-content: space-between !important;
+    gap: 12px !important;
+  }
+
+  .brand {
+    gap: 8px !important;
+    max-width: calc(100% - 50px) !important;
+  }
+
+  .brand-mark {
+    width: 28px !important;
+    height: 22px !important;
+    flex: none !important;
+  }
+
+  .brand-name {
+    font-size: 1.08rem !important;
+    letter-spacing: .18em !important;
+  }
+
+  .brand-sub {
+    font-size: 0.58rem !important;
+    line-height: 1.18 !important;
+    max-width: 235px !important;
+    color: var(--ink-soft) !important;
+    opacity: 0.85 !important;
+  }
+
+  /* When scrolled on mobile, collapse sub to save screen estate */
+  header.site.scrolled .brand-sub {
+    display: none !important;
   }
 
   /* Apple Glassmorphic Hamburger Toggle Button */
@@ -599,11 +682,27 @@ nav a:hover {
     border-bottom: 1px solid rgba(0, 0, 0, 0.06);
   }
 
+  .mobile-nav-brand-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    max-width: calc(100% - 46px);
+  }
+
   .mobile-nav-top .brand-name {
     font-size: 1.15rem;
     font-weight: 550;
     letter-spacing: .18em;
     color: var(--ink);
+    line-height: 1.1;
+  }
+
+  .mobile-nav-fullform {
+    font-size: 0.65rem;
+    line-height: 1.25;
+    color: var(--ink-soft);
+    font-weight: 400;
+    letter-spacing: 0.02em;
   }
 
   .mobile-nav-close {
