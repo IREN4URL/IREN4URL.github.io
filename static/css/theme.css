@@ -2384,9 +2384,19 @@ section#publications .wrap {
 /* Metadata Row */
 .pub-meta-row {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  gap: 10px;
-  margin-bottom: 10px;
+  gap: 8px 10px;
+  margin-bottom: 12px;
+}
+
+.pub-year-badge,
+.pub-kind-badge,
+.pub-area-badge {
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
 }
 
 .pub-year-badge {
@@ -2586,6 +2596,148 @@ section#publications .wrap {
   padding: 0 14px;
 }
 
+/* Responsive Faceted Filter & Publications Adjustments */
+@media (max-width: 860px) {
+  .pub-facet-bar {
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    padding: 16px;
+  }
+
+  .pub-facet-bar .facet-field:nth-child(3) {
+    grid-column: 1 / 2;
+  }
+
+  .pub-facet-bar .facet-actions {
+    grid-column: 2 / 3;
+    justify-content: flex-start;
+    align-self: flex-end;
+  }
+}
+
+@media (max-width: 600px) {
+  .pub-filter-bar {
+    display: flex;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding: 4px;
+    margin-bottom: 16px;
+    scrollbar-width: none;
+  }
+
+  .pub-filter-bar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .pub-filter-btn {
+    padding: 7px 14px;
+    font-size: 0.82rem;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .pub-facet-bar {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding: 15px 14px;
+    border-radius: 16px;
+    margin-bottom: 20px;
+  }
+
+  .pub-facet-bar .facet-field {
+    width: 100%;
+  }
+
+  .pub-facet-bar .facet-field:nth-child(3) {
+    grid-column: auto;
+  }
+
+  .pub-facet-bar .facet-actions {
+    grid-column: auto;
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    margin-top: 4px;
+  }
+
+  .facet-select {
+    font-size: 0.92rem;
+    padding: 10px 34px 10px 12px;
+    min-height: 44px;
+  }
+
+  .facet-apply-btn {
+    flex: 1 1 auto;
+    min-height: 44px;
+    font-size: 0.92rem;
+    padding: 11px 18px;
+    justify-content: center;
+  }
+
+  .facet-reset-btn {
+    flex: 0 0 auto;
+    min-height: 44px;
+    font-size: 0.88rem;
+    padding: 11px 16px;
+    justify-content: center;
+  }
+
+  /* Publications card mobile adjustments */
+  .pub-card {
+    padding: 18px 16px;
+    border-radius: 16px;
+    margin-bottom: 14px;
+  }
+
+  .pub-meta-row {
+    gap: 6px 8px;
+    margin-bottom: 10px;
+  }
+
+  .pub-year-badge {
+    font-size: 0.78rem;
+    padding: 2.5px 8.5px;
+  }
+
+  .pub-kind-badge {
+    font-size: 0.74rem;
+    padding: 2.5px 8.5px;
+  }
+
+  .pub-area-badge {
+    font-size: 0.74rem;
+    padding: 2.5px 8.5px;
+  }
+
+  .pub-title {
+    font-size: 1.08rem;
+    line-height: 1.35;
+    margin-bottom: 8px;
+  }
+
+  .pub-authors {
+    font-size: 0.88rem;
+    line-height: 1.5;
+  }
+
+  .pub-venue {
+    font-size: 0.88rem;
+    line-height: 1.45;
+  }
+
+  .pub-links {
+    gap: 8px;
+    margin-top: 12px;
+    padding-top: 10px;
+  }
+
+  .pub-chip {
+    font-size: 0.82rem;
+    padding: 6px 12px;
+  }
+}
+
 /* =============================================================
    APPLE FIRST UI — TOOLS (VISION-OS GLASSMORPHISM)
    ============================================================= */
@@ -2695,8 +2847,72 @@ section#tools .wrap {
 }
 
 @media (max-width: 600px) {
+  .tools-filter-bar {
+    display: flex;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin-bottom: 20px;
+    padding: 4px;
+    scrollbar-width: none;
+  }
+
+  .tools-filter-bar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .tool-filter-btn {
+    padding: 7px 16px;
+    font-size: 0.84rem;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
   .tools-grid {
     grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .tool-card {
+    padding: 20px 18px;
+    border-radius: 16px;
+  }
+
+  .tool-header-row {
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 14px;
+  }
+
+  .tool-status-badge {
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .tool-title {
+    font-size: 1.22rem;
+  }
+
+  .tool-tagline {
+    font-size: 0.86rem;
+    margin-bottom: 10px;
+  }
+
+  .tool-card p {
+    font-size: 0.88rem;
+    line-height: 1.55;
+    margin: 0 0 16px;
+  }
+
+  .tool-actions {
+    gap: 8px;
+    padding-top: 14px;
+  }
+
+  .tool-btn-primary,
+  .tool-btn-secondary {
+    font-size: 0.84rem;
+    padding: 8px 15px;
   }
 }
 
@@ -2809,6 +3025,8 @@ section#tools .wrap {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
   margin-bottom: 16px;
 }
 
@@ -3804,6 +4022,11 @@ section#tools .wrap {
   z-index: 1;
 }
 
+.contact-context .section-head {
+  display: block;
+  margin-bottom: 16px;
+}
+
 .contact-context .section-head h2 {
   font-family: var(--serif);
   font-size: clamp(2rem, 3.8vw, 2.75rem);
@@ -3811,6 +4034,7 @@ section#tools .wrap {
   letter-spacing: -0.025em;
   color: var(--ink);
   margin-bottom: 12px;
+  white-space: nowrap;
 }
 
 .contact-lead {
