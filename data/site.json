@@ -5,19 +5,42 @@
   "metaDescription": "ɪreːn is an interdisciplinary research collaboration working on ethical and equitable language technology for under-resourced languages.",
   "contact": {
     "email": "huidromrudali@gmail.com",
-    "lead": "Rudali Huidrom",
+    "lead": "Rudali Huidrom (Postdoctoral Researcher, CNRS)",
     "leadRole": "ɪreːn Lead and Coordinator",
-    "github": "https://github.com/RHuidrom96",
-    "address": "CNRS, LIG, GETALP / Collaborating Institutions Across India & Worldwide"
+    "github": "https://github.com/RHuidrom96"
   },
   "nav": [
-    { "label": "About", "href": "#about" },
-    { "label": "Objectives", "href": "#objectives" },
-    { "label": "Collaborators", "href": "#collaborators" },
-    { "label": "Publications", "href": "#publications" },
-    { "label": "Tools", "href": "#tools" },
-    { "label": "News", "href": "#news" },
-    { "label": "Gallery", "href": "#gallery" },
-    { "label": "Contact us", "href": "#contact" }
+    {
+      "label": "About",
+      "href": "#about"
+    },
+    {
+      "label": "Objectives",
+      "href": "#objectives"
+    },
+    {
+      "label": "Collaborators",
+      "href": "#collaborators"
+    },
+    {
+      "label": "Publications",
+      "href": "#publications"
+    },
+    {
+      "label": "Tools",
+      "href": "#tools"
+    },
+    {
+      "label": "News",
+      "href": "#news"
+    },
+    {
+      "label": "Gallery",
+      "href": "#gallery"
+    },
+    {
+      "label": "Contact us",
+      "href": "#contact"
+    }
   ]
 }
