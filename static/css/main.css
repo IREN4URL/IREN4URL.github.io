@@ -7,21 +7,23 @@
   color-scheme: light;
   --paper: #F4F6FA;
   --surface: #FFFFFF;
-  --ink: #161A2B;
-  --ink-soft: #586079;
+  --ink: #111827;
+  --ink-soft: #374151;
   --blue: #2F56C8;
   --sky: #9DB8F2;
   --line: #D7DDEA;
   --tint: #E7ECF7;
-  --sans: "Jost", "Futura", "Century Gothic", system-ui, -apple-system, "Segoe UI", sans-serif;
-  --serif: "Jost", "Futura", "Century Gothic", system-ui, -apple-system, "Segoe UI", sans-serif;
-  --script: "Noto Sans Devanagari", "Noto Sans Tamil", "Noto Sans Kannada", "Noto Sans Bengali", "Noto Sans Ethiopic", "Noto Sans Malayalam", "Noto Sans Telugu", "Noto Sans Gurmukhi", "Jost", system-ui, sans-serif;
+  --sans: "Inter", "Noto Sans Meetei Mayek", "Noto Sans Bengali", "Noto Sans Devanagari", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --serif: "Source Serif 4", Georgia, Cambria, "Times New Roman", Times, serif;
+  --script: "Noto Sans Meetei Mayek", "Noto Sans Bengali", "Noto Sans Devanagari", "Noto Sans Tamil", "Noto Sans Kannada", "Noto Sans Malayalam", "Noto Sans Telugu", "Noto Sans Gurmukhi", "Noto Sans Gujarati", "Noto Sans Oriya", "Noto Sans Arabic", "Noto Sans Ethiopic", "Inter", system-ui, sans-serif;
   box-sizing: border-box;
   padding-top: env(safe-area-inset-top, 0px);
   padding-bottom: env(safe-area-inset-bottom, 0px);
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
@@ -34,11 +36,15 @@ body {
   margin: 0;
   background: var(--paper);
   color: var(--ink);
-  font-family: var(--serif);
-  font-size: 1.1rem;
+  font-family: var(--sans);
+  font-size: 1.0625rem;
   font-weight: 400;
-  line-height: 1.7;
+  line-height: 1.68;
   -webkit-font-smoothing: antialiased;
+}
+
+p {
+  max-width: 70ch;
 }
 
 img {
@@ -64,9 +70,13 @@ textarea:focus-visible {
   border-radius: 4px;
 }
 
-h1, h2, h3, h4, h5 {
-  font-family: var(--sans);
-  font-weight: 400;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: var(--serif);
+  font-weight: 600;
   line-height: 1.25;
   margin: 0;
   color: var(--ink);
@@ -198,6 +208,7 @@ nav a.active {
   .hero-rings {
     width: 360%;
   }
+
   .lockup {
     margin-bottom: 6vw;
   }
@@ -220,13 +231,16 @@ nav a.active {
     transform: scale(.9) rotate(0deg);
     opacity: 0;
   }
+
   25% {
     opacity: calc(.75 * (1 - var(--f) * .75));
   }
+
   50% {
     transform: scale(1.04) rotate(calc(var(--i) * .6deg));
     opacity: calc(.6 * (1 - var(--f) * .75));
   }
+
   100% {
     transform: scale(.9) rotate(0deg);
     opacity: 0;
@@ -263,7 +277,7 @@ nav a.active {
   margin: -.12em -.03em;
 }
 
-.ch > i {
+.ch>i {
   display: block;
   font-style: normal;
   will-change: transform;
@@ -274,10 +288,13 @@ nav a.active {
 }
 
 @keyframes breathe {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: scale(1);
     opacity: .85;
   }
+
   50% {
     transform: scale(1.025);
     opacity: 1;
@@ -1148,8 +1165,15 @@ footer.site-footer a:hover {
 }
 
 @keyframes skeleton-pulse {
-  0%, 100% { opacity: 0.6; }
-  50% { opacity: 1; }
+
+  0%,
+  100% {
+    opacity: 0.6;
+  }
+
+  50% {
+    opacity: 1;
+  }
 }
 
 @font-face {
@@ -1161,7 +1185,9 @@ footer.site-footer a:hover {
 }
 
 .iren-name {
-  font-family: "Iren Name", "Inter", "Noto Sans", "Segoe UI", sans-serif;
+  font-family: inherit;
+  font-weight: 600;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
 }
 
 /* ==========================================================================
@@ -1172,6 +1198,7 @@ footer.site-footer a:hover {
   .join-card {
     grid-template-columns: 1fr;
   }
+
   header.site .wrap {
     height: auto;
     padding-top: 12px;
@@ -1180,6 +1207,7 @@ footer.site-footer a:hover {
     align-items: flex-start;
     gap: 10px;
   }
+
   nav {
     width: 100%;
   }
@@ -1189,6 +1217,7 @@ footer.site-footer a:hover {
   .contact-row {
     grid-template-columns: 1fr;
   }
+
   .pub {
     grid-template-columns: 1fr;
     gap: 6px;
@@ -1199,12 +1228,17 @@ footer.site-footer a:hover {
   html {
     scroll-behavior: auto;
   }
-  .btn, .tool-btn {
+
+  .btn,
+  .tool-btn {
     transition: none;
   }
-  .hero h1, .fullform {
+
+  .hero h1,
+  .fullform {
     animation: none;
   }
+
   .hero-rings path {
     animation: none;
     opacity: .35;
