@@ -7,7 +7,7 @@
     "affiliation": "Postdoc @ CNRS, LIG, GETALP",
     "initials": "RH",
     "photo": "",
-    "url": " https://scholar.google.com/citations?user=mQuoBfsAAAAJ&hl=en&oi=ao, https://www.linkedin.com/in/rudali-huidrom-983316104, https://github.com/RHuidrom96",
+    "url": "https://scholar.google.com/citations?user=mQuoBfsAAAAJ&hl, https://www.linkedin.com/in/rudali-huidrom-983316104, https://github.com/RHuidrom96",
     "active": true
   },
   {
@@ -18,7 +18,7 @@
     "affiliation": "Assistant Professor, IIT Dharwad",
     "initials": "AK",
     "photo": "",
-    "url": "https://scholar.google.com/citations?hl=en&user=OpK0OmcAAAAJ, https://in.linkedin.com/in/anand-konjengbam-9b691925",
+    "url": "https://www.iitdh.ac.in/user-profile/konjengbam-anand",
     "active": true
   },
   {
@@ -29,7 +29,7 @@
     "affiliation": "Professor, IIIT Delhi",
     "initials": "VG",
     "photo": "",
-    "url": "https://scholar.google.com/citations?hl=en&user=YJaVmSwAAAAJ, https://in.linkedin.com/in/vikram-goyal-7a684213",
+    "url": "https://scholar.google.com/citations?user=YJaVmSwAAAAJ&hl=en",
     "active": true
   },
   {
@@ -41,7 +41,7 @@
     "affiliation": "PhD Scholar, IIT Dharwad",
     "initials": "VK",
     "photo": "",
-    "url": "https://scholar.google.com/citations?hl=en&user=x2Ey-8gAAAAJ, https://in.linkedin.com/in/vikas-kumar6",
+    "url": "https://scholar.google.com/citations?user=x2Ey-8gAAAAJ&hl=en, https://www.linkedin.com/in/vikas-kumar6/",
     "active": true
   },
   {
@@ -77,7 +77,7 @@
     "affiliation": "PhD Scholar, NIT Silchar; IIT Patna",
     "initials": "KS",
     "photo": "",
-    "url": "https://scholar.google.com/citations?user=QsaScZ8AAAAJ&hl=en",
+    "url": "https://scholar.google.com/citations?user=QsaScZ8AAAAJ, www.linkedin.com/in/boynfrancis",
     "active": true
   },
   {
@@ -86,10 +86,10 @@
     "role": "Core Team",
     "group": "Research Team",
     "subgroup": "Core team",
-    "affiliation": "Research Scientist-I, IIT Bombay",
+    "affiliation": "MS by Research, IIT Dharwad",
     "initials": "AS",
     "photo": "",
-    "url": "https://scholar.google.com/citations?hl=en&user=pCa4M2AAAAAJ, https://in.linkedin.com/in/%E0%A4%85bhishek-sharma-879187184",
+    "url": "https://ab5iitdh.github.io/Abhishek_Omprakash_Sharma.github.io/",
     "active": true
   },
   {
@@ -101,7 +101,7 @@
     "affiliation": "PhD Scholar, IIT Dharwad",
     "initials": "NK",
     "photo": "",
-    "url": "",
+    "url": "https://www.linkedin.com/in/nicholas-khumukcham-780245176",
     "active": true
   },
   {
@@ -113,7 +113,7 @@
     "affiliation": "Project Assistant, EMA Lab, IIT Dharwad",
     "initials": "JK",
     "photo": "",
-    "url": "https://in.linkedin.com/in/justice-konjengbam-9a1054318",
+    "url": "https://www.linkedin.com/in/justice-konjengbam-9a1054318",
     "active": true
   },
   {
@@ -125,7 +125,7 @@
     "affiliation": "PhD Scholar, EFL University, Hyderabad",
     "initials": "JR",
     "photo": "",
-    "url": "https://in.linkedin.com/in/j-n-roy-l",
+    "url": "www.linkedin.com/in/j-n-roy-l",
     "active": true
   },
   {
@@ -137,7 +137,7 @@
     "affiliation": "Senior Data Engineer (Speech), Gnani AI",
     "initials": "KK",
     "photo": "",
-    "url": "https://in.linkedin.com/in/konthou-kabi-khanganba-a3651b77",
+    "url": "https://www.linkedin.com/in/konthou-kabi-khanganba-a3651b77",
     "active": true
   },
   {
@@ -149,7 +149,7 @@
     "affiliation": "Masters student, JNU",
     "initials": "NZ",
     "photo": "",
-    "url": "https://www.linkedin.com/in/zenonong, https://github.com/zzenonong",
+    "url": "https://www.linkedin.com/in/zenonong",
     "active": true
   },
   {
@@ -185,7 +185,7 @@
     "affiliation": "B.Tech student, NIT Manipur",
     "initials": "MY",
     "photo": "",
-    "url": "https://in.linkedin.com/in/maverickyumnam",
+    "url": "https://www.linkedin.com/in/maverickyumnam",
     "active": true
   },
   {
@@ -197,7 +197,7 @@
     "affiliation": "Language Expert at NTNU",
     "initials": "ND",
     "photo": "",
-    "url": "https://in.linkedin.com/in/normodadoley",
+    "url": "https://normodadoley.com",
     "active": true
   },
   {
@@ -210,6 +210,30 @@
     "initials": "TB",
     "photo": "",
     "url": "https://in.linkedin.com/in/tarunbisht",
+    "active": true
+  },
+  {
+    "id": "tulsipriya-hanglem",
+    "name": "Tulsipriya Hanglem",
+    "role": "Researcher",
+    "group": "Research Team",
+    "subgroup": "Researchers",
+    "affiliation": "Mtech Manipur Institute of Technology",
+    "initials": "TH",
+    "photo": "",
+    "url": "https://www.linkedin.com/in/tulsipriya-hanglem-100559262",
+    "active": true
+  },
+  {
+    "id": "parthiv-konwer",
+    "name": "Parthiv Konwer",
+    "role": "Researcher",
+    "group": "Research Team",
+    "subgroup": "Researchers",
+    "affiliation": "Software Engineer, Deloitte",
+    "initials": "PK",
+    "photo": "",
+    "url": "https://www.linkedin.com/in/parthiv-konwer",
     "active": true
   },
   {

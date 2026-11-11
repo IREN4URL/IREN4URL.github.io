@@ -20,13 +20,13 @@
         "primary": true
       },
       {
-        "label": "Watch the demo",
-        "url": "https://youtu.be/NDtqi_Rch2I",
+        "label": "Code on GitHub",
+        "url": "https://github.com/RHuidrom96/aura",
         "primary": false
       },
       {
-        "label": "Code on GitHub",
-        "url": "https://github.com/RHuidrom96/aura",
+        "label": "Watch the demo",
+        "url": "https://youtu.be/NDtqi_Rch2I",
         "primary": false
       }
     ]

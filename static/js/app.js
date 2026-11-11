@@ -515,24 +515,7 @@
 
     const links = parsePersonLinks(person.url);
 
-    if (links.length === 1) {
-      const link = document.createElement("a");
-      link.href = links[0].url;
-      link.target = "_blank";
-      link.rel = "noopener noreferrer";
-      link.textContent = person.name;
-      nameEl.appendChild(link);
-
-      const arrow = document.createElement("a");
-      arrow.className = "person-link-icon";
-      arrow.href = links[0].url;
-      arrow.target = "_blank";
-      arrow.rel = "noopener noreferrer";
-      arrow.setAttribute("aria-label", `Visit ${person.name}'s ${links[0].label}`);
-      arrow.setAttribute("title", `Visit ${links[0].label}`);
-      arrow.innerHTML = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>`;
-      card.appendChild(arrow);
-    } else if (links.length > 1) {
+    if (links.length > 0) {
       const nameBtn = document.createElement("button");
       nameBtn.type = "button";
       nameBtn.className = "person-name-btn";
@@ -543,14 +526,14 @@
       arrowBtn.type = "button";
       arrowBtn.className = "person-link-icon has-multi-links";
       arrowBtn.setAttribute("aria-label", `Profiles for ${person.name}`);
-      arrowBtn.setAttribute("title", `${links.length} profiles available`);
+      arrowBtn.setAttribute("title", `${links.length} ${links.length === 1 ? "profile" : "profiles"} available`);
       arrowBtn.innerHTML = `
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
         <span class="multi-count-dot">${links.length}</span>
       `;
       card.appendChild(arrowBtn);
 
-      const hasHover = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
+      const isTouchDevice = window.matchMedia("(hover: none) and (pointer: coarse)").matches;
 
       const toggleMenu = (e) => {
         if (e) e.stopPropagation();
@@ -574,8 +557,8 @@
         }
       });
 
-      // Only bind hover preview listeners on desktop devices with precision pointer
-      if (hasHover) {
+      // Bind hover preview listeners for desktop / pointer devices
+      if (!isTouchDevice) {
         arrowBtn.addEventListener("mouseenter", () => showPersonLinksPopover(arrowBtn, person, links));
         arrowBtn.addEventListener("mouseleave", () => hidePersonLinksPopover(250));
         nameBtn.addEventListener("mouseenter", () => showPersonLinksPopover(arrowBtn, person, links));
