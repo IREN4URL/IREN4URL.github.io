@@ -391,6 +391,11 @@ nav a:hover {
   }
 }
 
+.hero.hero-offscreen .hero-rings path,
+.hero.hero-offscreen h1 {
+  animation-play-state: paused !important;
+}
+
 .hero-inner {
   position: relative;
   z-index: 2;
@@ -1576,12 +1581,13 @@ section#people .wrap {
   grid-auto-columns: clamp(280px, 30vw, 340px);
   gap: 14px;
   overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
+  scroll-snap-type: x proximity;
   padding: 12px 16px 24px 16px;
   margin: -12px -16px 0 -16px;
   scrollbar-width: none;
   -webkit-overflow-scrolling: touch;
+  touch-action: pan-x pan-y;
+  overscroll-behavior-x: contain;
 }
 
 .people-track-2row::-webkit-scrollbar {
@@ -1604,6 +1610,7 @@ section#people .wrap {
   gap: 15px;
   scroll-snap-align: start;
   min-height: 82px;
+  touch-action: pan-x pan-y;
   transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
   box-shadow:
     0 6px 24px -2px rgba(0, 0, 0, 0.04),
@@ -3549,12 +3556,13 @@ section#tools .wrap {
   grid-auto-columns: clamp(230px, 24vw, 300px);
   gap: 14px;
   overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
+  scroll-snap-type: x proximity;
   padding: 12px 16px 24px 16px;
   margin: -12px -16px 0 -16px;
   scrollbar-width: none;
   -webkit-overflow-scrolling: touch;
+  touch-action: pan-x pan-y;
+  overscroll-behavior-x: contain;
 }
 
 .gallery-track-2row::-webkit-scrollbar {
@@ -4455,6 +4463,22 @@ footer .wrap {
   .pub {
     grid-template-columns: 1fr;
     gap: 6px;
+  }
+}
+
+/* Mobile & Touch WebKit GPU Memory Stability */
+@media (max-width: 768px) {
+  .person-card,
+  .pub-card,
+  .tool-card,
+  .news-card-item {
+    backdrop-filter: blur(12px) saturate(180%);
+    -webkit-backdrop-filter: blur(12px) saturate(180%);
+  }
+
+  section:not(#hero-section) {
+    content-visibility: auto;
+    contain-intrinsic-size: auto 600px;
   }
 }
 
