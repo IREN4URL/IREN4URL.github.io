@@ -268,16 +268,5 @@
     "photo": "",
     "url": "",
     "active": false
-  },
-  {
-    "id": "nathan-pereira",
-    "name": "Nathan Pereira",
-    "role": "Past member",
-    "group": "Past members",
-    "affiliation": "B.Tech Student, VIT",
-    "initials": "NP",
-    "photo": "",
-    "url": "",
-    "active": false
   }
 ]

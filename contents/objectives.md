@@ -1,6 +1,6 @@
 #### Aim
 
-To serve under-resourced languages with language technology that works as well for them, and for every script they are written in, as it does for high-resource languages, and to measure honestly whether it does.
+To serve under-resourced languages, by producing and enriching language technology that works for those languages, for all of their speech varieties, and for all of their scripts, and to measure whether the linguistic nuances of the languages are accurately captured.
 
 #### Objectives
 

@@ -181,6 +181,20 @@
         if (!rafId) rafId = requestAnimationFrame(updateTilt);
       });
     }
+
+    // Pause hero continuous SVG animations when scrolled out of view to preserve mobile GPU memory
+    if (heroSection && "IntersectionObserver" in window) {
+      const heroObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            heroSection.classList.remove("hero-offscreen");
+          } else {
+            heroSection.classList.add("hero-offscreen");
+          }
+        });
+      }, { threshold: 0.05 });
+      heroObserver.observe(heroSection);
+    }
   }
 
   /* -------------------------------------------------------------
@@ -551,7 +565,33 @@
       arrowBtn.addEventListener("click", toggleMenu);
       nameBtn.addEventListener("click", toggleMenu);
 
+      let touchStartX = 0;
+      let touchStartY = 0;
+      let isTouchScrolling = false;
+
+      card.addEventListener("touchstart", (e) => {
+        if (e.touches && e.touches[0]) {
+          touchStartX = e.touches[0].clientX;
+          touchStartY = e.touches[0].clientY;
+          isTouchScrolling = false;
+        }
+      }, { passive: true });
+
+      card.addEventListener("touchmove", (e) => {
+        if (e.touches && e.touches[0]) {
+          const dx = Math.abs(e.touches[0].clientX - touchStartX);
+          const dy = Math.abs(e.touches[0].clientY - touchStartY);
+          if (dx > 8 || dy > 8) {
+            isTouchScrolling = true;
+          }
+        }
+      }, { passive: true });
+
       card.addEventListener("click", (e) => {
+        if (isTouchScrolling) {
+          isTouchScrolling = false;
+          return;
+        }
         if (!e.target.closest("button, a")) {
           toggleMenu(e);
         }
@@ -575,8 +615,16 @@
     if (!track || !prevBtn || !nextBtn) return;
 
     function updateBtnState() {
-      prevBtn.disabled = track.scrollLeft <= 5;
-      nextBtn.disabled = track.scrollLeft + track.clientWidth >= track.scrollWidth - 5;
+      const canScrollLeft = track.scrollLeft > 5;
+      const canScrollRight = track.scrollLeft + track.clientWidth < track.scrollWidth - 5;
+      prevBtn.disabled = !canScrollLeft;
+      nextBtn.disabled = !canScrollRight;
+
+      if (!canScrollLeft && !canScrollRight && track.scrollWidth <= track.clientWidth + 2) {
+        if (prevBtn.parentElement) prevBtn.parentElement.style.visibility = "hidden";
+      } else {
+        if (prevBtn.parentElement) prevBtn.parentElement.style.visibility = "visible";
+      }
     }
 
     prevBtn.addEventListener("click", () => {
@@ -590,8 +638,9 @@
     });
 
     track.addEventListener("scroll", updateBtnState, { passive: true });
+    window.addEventListener("resize", updateBtnState, { passive: true });
     // Initial check
-    setTimeout(updateBtnState, 200);
+    setTimeout(updateBtnState, 250);
   }
 
   /* -------------------------------------------------------------
@@ -676,7 +725,7 @@
         title: "Core Research Team",
         members: people.filter(p => p.group === "Research Team" && p.subgroup === "Core team"),
         rows: 2,
-        canScroll: false
+        canScroll: true
       },
       {
         id: "researchers",
