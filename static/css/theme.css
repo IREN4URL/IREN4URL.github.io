@@ -194,6 +194,10 @@ header.site.scrolled .wrap {
   overflow: hidden;
 }
 
+.brand-sub-tail {
+  white-space: nowrap;
+}
+
 header.site.scrolled .brand-sub {
   opacity: 0;
   max-height: 0;
